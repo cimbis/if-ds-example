@@ -1,8 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+import './index.scss';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+
+import whatInput from "what-input";
+whatInput.specificKeys([9]);
 
 ReactDOM.render(
   <React.StrictMode>
