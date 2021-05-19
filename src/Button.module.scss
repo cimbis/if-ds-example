@@ -1,4 +1,6 @@
-.myButton {
-  border: 1px solid red;
+:global(.if.button) {
+  &.myButton {
+    border: 1px solid red;
+  }
 }
 

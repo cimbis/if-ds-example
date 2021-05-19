@@ -1,5 +1,4 @@
 import classNames from "classnames";
-import styled from "styled-components";
 
 import "@if-design-system/button/src/button.scss";
 import classes from "./Button.module.scss";
@@ -8,9 +7,7 @@ interface MyButtonProps {
     text: string
 }
 
-function MyUnstyledButton(props: MyButtonProps) {
-    console.log(classes.myButton)
-
+export function MyButton(props: MyButtonProps) {
     return (
         <button
             className={classNames('if', 'button', classes.myButton)}
@@ -19,7 +16,3 @@ function MyUnstyledButton(props: MyButtonProps) {
         </button>
     );
 }
-
-export const MyButton = styled(MyUnstyledButton)`
-  border: 1px solid red;
-`
